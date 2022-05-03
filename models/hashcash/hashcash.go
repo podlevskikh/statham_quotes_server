@@ -35,7 +35,7 @@ func randSeq(n int) string {
 func NewHashcash(resource string) *Hashcash {
 	return &Hashcash{
 		Ver:      1,
-		Bits:     4,
+		Bits:     5,
 		Date:     time.Now(),
 		Resource: resource,
 		Rand:     randSeq(10),

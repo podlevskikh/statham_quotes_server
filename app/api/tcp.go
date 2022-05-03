@@ -21,7 +21,7 @@ func NewTcpAPI(quotesService *quotesService.Service, powService *powService.Serv
 }
 
 func (a *TcpAPI) RunTCPServer(ctx context.Context) error {
-	l, err := net.Listen("tcp", "localhost:3333")
+	l, err := net.Listen("tcp", ":"+specs.TCPPort)
 	if err != nil {
 		return errors.Wrap(err, "listen")
 	}
@@ -31,7 +31,7 @@ func (a *TcpAPI) RunTCPServer(ctx context.Context) error {
 			a.logger.Err(err).Msg("close listener")
 		}
 	}()
-	a.logger.Info().Msg("listen localhost:3333")
+	a.logger.Info().Msg("listen :"+specs.TCPPort)
 	h := handlers.NewQuote(a.quotesService, a.powService, a.logger)
 	for {
 		conn, err := l.Accept()

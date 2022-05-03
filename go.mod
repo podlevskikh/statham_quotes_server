@@ -7,3 +7,8 @@ require (
 	github.com/rs/zerolog v1.26.1
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 )
+
+require (
+	github.com/joho/godotenv v1.4.0 // indirect
+	github.com/kelseyhightower/envconfig v1.4.0 // indirect
+)
