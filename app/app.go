@@ -2,11 +2,11 @@ package app
 
 import (
 	"context"
+	"github.com/podlevskikh/statham_quotes_server/app/api"
+	"github.com/podlevskikh/statham_quotes_server/services/pow"
+	"github.com/podlevskikh/statham_quotes_server/services/quotes"
 	"github.com/rs/zerolog"
 	"golang.org/x/sync/errgroup"
-	"statham_quotes_server/app/api"
-	"statham_quotes_server/services/pow"
-	"statham_quotes_server/services/quotes"
 )
 
 type App struct {

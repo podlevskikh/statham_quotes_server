@@ -1,6 +1,6 @@
 package handlers
 
-import "statham_quotes_server/models"
+import "github.com/podlevskikh/statham_quotes_server/models"
 
 type QuotesService interface {
 	GetQuote() models.Quote

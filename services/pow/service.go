@@ -2,7 +2,7 @@ package pow
 
 import (
 	"github.com/pkg/errors"
-	hashcash "statham_quotes_server/models/hashcash"
+	"github.com/podlevskikh/statham_quotes_server/models/hashcash"
 )
 
 type Service struct {

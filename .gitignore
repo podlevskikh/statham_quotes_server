@@ -1,0 +1,9 @@
+/.idea
+*.DS_Store
+/build
+/vendor
+*.log
+*.local.yml
+/.env
+/gin-bin
+coverage.out

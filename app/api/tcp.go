@@ -3,11 +3,11 @@ package api
 import (
 	"context"
 	"github.com/pkg/errors"
+	"github.com/podlevskikh/statham_quotes_server/app/api/handlers"
+	powService "github.com/podlevskikh/statham_quotes_server/services/pow"
+	quotesService "github.com/podlevskikh/statham_quotes_server/services/quotes"
 	"github.com/rs/zerolog"
 	"net"
-	"statham_quotes_server/app/api/handlers"
-	powService "statham_quotes_server/services/pow"
-	quotesService "statham_quotes_server/services/quotes"
 )
 
 type TcpAPI struct {

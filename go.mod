@@ -1,4 +1,4 @@
-module statham_quotes_server
+module github.com/podlevskikh/statham_quotes_server
 
 go 1.17
 

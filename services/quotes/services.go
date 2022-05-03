@@ -1,8 +1,8 @@
 package quotes
 
 import (
+	"github.com/podlevskikh/statham_quotes_server/models"
 	"math/rand"
-	"statham_quotes_server/models"
 )
 
 var quotes = []string{"I'm certainly not Tom Cruise or Brad Pitt."}

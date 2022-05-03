@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
+	"github.com/podlevskikh/statham_quotes_server/app"
 	"github.com/rs/zerolog"
 	"os"
-	"statham_quotes_server/app"
 )
 
 func main() {
