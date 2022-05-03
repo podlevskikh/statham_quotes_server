@@ -30,9 +30,9 @@ func (h *Quote) HandleRequest(conn net.Conn) {
 		}
 	}()
 
-	challenge := h.powService.GetChallenge(strings.Split(conn.RemoteAddr().String(),":")[0])
+	challenge := h.powService.GetChallenge(strings.Split(conn.RemoteAddr().String(), ":")[0])
 
-	_, err := conn.Write([]byte(challenge))
+	_, err := conn.Write([]byte(challenge + "\n"))
 	if err != nil {
 		h.logger.Err(err).Msg("send challenge")
 		return
@@ -56,7 +56,7 @@ func (h *Quote) HandleRequest(conn net.Conn) {
 		return
 	}
 
-	_, err = conn.Write([]byte(h.quotesService.GetQuote().Text))
+	_, err = conn.Write([]byte(h.quotesService.GetQuote().Text + "\n"))
 	if err != nil {
 		h.logger.Err(err).Msg("write quote")
 		return

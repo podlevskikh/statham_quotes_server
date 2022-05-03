@@ -94,7 +94,6 @@ func (h *Hashcash) IsValid() bool {
 	s.Write([]byte(h.ToString()))
 	bs := s.Sum(nil)
 	hash := fmt.Sprintf("%x", bs)
-	fmt.Println(hash)
 
 	if h.Bits > len(hash) {
 		return false
