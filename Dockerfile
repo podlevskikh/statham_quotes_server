@@ -12,6 +12,4 @@ FROM scratch
 
 COPY --from=builder /build/main /
 
-EXPOSE 3333
-
 ENTRYPOINT ["/main"]

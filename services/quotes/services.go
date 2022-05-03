@@ -12,6 +12,12 @@ var quotes = []string{
 	"I love to get behind the wheel and get competitive.",
 	"I've come from nowhere, and I'm not shy to go back.",
 	"Do 40 hard minutes, not an hour and a half of nonsense.",
+	"People like to pigeonhole you.",
+	"Looking good and feeling good go hand in hand. If you have a healthy lifestyle, your diet and nutrition are set, and you’re working out, you’re going to feel good.",
+	"I’m enthusiastic and ambitious, and I work hard.",
+	"Do 40 hard minutes, not an hour and a half of nonsense.",
+	"There is something about yourself that you don’t know...",
+	"Every sequel needs to be bigger and better.",
 }
 
 type Service struct {
